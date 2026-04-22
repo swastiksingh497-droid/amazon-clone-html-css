@@ -1,4 +1,4 @@
-/* ================= GLOBAL & RESET ================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #e3e6e6; /* Amazon's light gray background */
+    background-color: #e3e6e6; 
     overflow-x: hidden;
 }
 
@@ -21,7 +21,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* ================= NAVBAR ================= */
 header {
     width: 100%;
 }
@@ -47,7 +46,7 @@ header {
     border: 1px solid white;
 }
 
-/* Logo */
+
 .navlogo {
     width: 100px;
     display: flex;
@@ -81,7 +80,7 @@ header {
     font-weight: 700;
 }
 
-/* Search Bar - Professional Flex Logic */
+
 .navsearch {
     display: flex;
     flex-grow: 1;
@@ -156,13 +155,13 @@ span {
     font-size: 14px;
 }
 
-/* Hamburger for Mobile */
+
 .hamburger {
     display: none;
     font-size: 24px;
 }
 
-/* ================= SECONDARY PANEL ================= */
+
 .panel {
     height: 40px;
     background-color: #232f3e;
@@ -195,7 +194,7 @@ span {
     font-weight: 700;
 }
 
-/* ================= HERO SECTION ================= */
+
 .hero {
     background: linear-gradient(to bottom, rgba(0,0,0,0), #e3e6e6), url('hero_image.jpg');
     background-size: cover;
@@ -216,13 +215,13 @@ span {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* ================= SHOPPING GRID ================= */
+
 .shop {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
-    margin-top: -250px; /* Overlaps hero like real Amazon */
+    margin-top: -250px; 
     z-index: 10;
     position: relative;
 }
@@ -252,7 +251,7 @@ span {
     font-size: 13px;
 }
 
-/* ================= FOOTER ================= */
+
 footer {
     margin-top: 40px;
 }
@@ -316,16 +315,12 @@ ul a {
     font-size: 12px;
 }
 
-/* ================= RESPONSIVENESS ================= */
-
-/* Tablet and smaller */
 @media (max-width: 1024px) {
     .address, .signin:nth-child(5) {
-        display: none; /* Hide location and orders on tablet to save space */
+        display: none; 
     }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
     .navbar {
         flex-wrap: wrap;
