@@ -1,3 +1,4 @@
+//this js file is made by ai 
 // Professional responsive Amazon clone JS
 // Handles hamburger menu toggle, resize observer for perf, smooth interactions
 
