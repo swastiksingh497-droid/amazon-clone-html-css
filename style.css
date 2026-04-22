@@ -1,0 +1,377 @@
+/* ================= GLOBAL & RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #e3e6e6; /* Amazon's light gray background */
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #007185;
+}
+
+a:hover {
+    color: #c7511f;
+    text-decoration: underline;
+}
+
+/* ================= NAVBAR ================= */
+header {
+    width: 100%;
+}
+
+.navbar {
+    height: 60px;
+    background-color: #131921;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 10px;
+}
+
+.border {
+    border: 1px solid transparent;
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.border:hover {
+    border: 1px solid white;
+}
+
+/* Logo */
+.navlogo {
+    width: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    background: url('https://pngimg.com/uploads/amazon/amazon_PNG11.png') no-repeat center;
+    background-size: contain;
+    height: 35px;
+    width: 100%;
+}
+
+/* Address Box */
+.address {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.add {
+    font-size: 12px;
+    color: #ccc;
+    padding-left: 15px;
+}
+
+.add1 {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* Search Bar - Professional Flex Logic */
+.navsearch {
+    display: flex;
+    flex-grow: 1;
+    height: 40px;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+.navsearch:focus-within {
+    box-shadow: 0 0 0 3px #febd69;
+}
+
+#select {
+    width: 50px;
+    background-color: #f3f3f3;
+    border: none;
+    border-right: 1px solid #ccc;
+    cursor: pointer;
+    padding-left: 5px;
+}
+
+#input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    font-size: 15px;
+}
+
+.searchicon {
+    width: 45px;
+    background-color: #febd69;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.searchicon:hover {
+    background-color: #f3a847;
+}
+
+/* Right Nav Links */
+.signin, .cart {
+    flex-shrink: 0;
+}
+
+span {
+    font-size: 12px;
+}
+
+.acc {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.cart {
+    display: flex;
+    align-items: flex-end;
+}
+
+.carticon {
+    font-size: 30px;
+}
+
+.pcart {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* Hamburger for Mobile */
+.hamburger {
+    display: none;
+    font-size: 24px;
+}
+
+/* ================= SECONDARY PANEL ================= */
+.panel {
+    height: 40px;
+    background-color: #232f3e;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+.all {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.options {
+    display: flex;
+    flex-grow: 1;
+    margin-left: 15px;
+}
+
+.options p {
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.deals {
+    font-weight: 700;
+}
+
+/* ================= HERO SECTION ================= */
+.hero {
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #e3e6e6), url('hero_image.jpg');
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 250px;
+}
+
+.heromsg {
+    background-color: white;
+    color: #0f1111;
+    width: 95%;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* ================= SHOPPING GRID ================= */
+.shop {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-top: -250px; /* Overlaps hero like real Amazon */
+    z-index: 10;
+    position: relative;
+}
+
+.box {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box h2 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.img {
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 15px;
+}
+
+.box p {
+    font-size: 13px;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    margin-top: 40px;
+}
+
+.top {
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.top:hover {
+    background-color: #485769;
+}
+
+.fpanle {
+    background-color: #232f3e;
+    color: #ddd;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 40px 15%;
+    gap: 20px;
+    border-bottom: 0.5px solid #485769;
+}
+
+ul p {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+ul a {
+    display: block;
+    color: #ddd;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.flogo {
+    background-color: #232f3e;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.logo1 {
+    background: url('https://pngimg.com/uploads/amazon/amazon_PNG11.png') no-repeat center;
+    background-size: contain;
+    height: 35px;
+    width: 100px;
+}
+
+.copy {
+    background-color: #131921;
+    color: #ccc;
+    padding: 30px;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* ================= RESPONSIVENESS ================= */
+
+/* Tablet and smaller */
+@media (max-width: 1024px) {
+    .address, .signin:nth-child(5) {
+        display: none; /* Hide location and orders on tablet to save space */
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+    }
+
+    .hamburger {
+        display: block;
+        order: 1;
+    }
+
+    .navlogo {
+        order: 2;
+    }
+
+    .cart {
+        order: 3;
+        margin-left: auto;
+    }
+
+    .navsearch {
+        order: 4;
+        width: 100%;
+        margin: 10px 0 5px;
+    }
+
+    .signin {
+        display: none;
+    }
+
+    .options {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .deals {
+        display: none;
+    }
+
+    .hero {
+        height: 400px;
+        padding-top: 150px;
+    }
+
+    .shop {
+        margin-top: -100px;
+    }
+}
